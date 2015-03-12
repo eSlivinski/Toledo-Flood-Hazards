@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+a:hover,
+.btn-link:hover{
+	text-decoration: none;
+}
+a:active{
+	background-color: inherit;
+}
+html{
+	min-height: 100%;
+}
+header{
+	box-shadow: 0 3px 10px #888;
+}
+footer{
+	border-color: rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.5);
+	left: 0;
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,0.5);
+	padding: 20px 0 20px 0;
+}
+header>nav{
+	background-color: rgba(0,0,0,0.5);
+}
+
+header .nav>li>a{
+	font-size: 18px;
+	color: rgba(255,191,0,1);
+	padding: 10px 30px 0 30px;
+}
+header .nav>li>a:hover,
+header .nav>li>a.current{
+	background-color: inherit;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid rgba(255,191,0,1);
+	border-radius: 0px;
+}
+.nav-text{
+
+}
+
+
+.sidenav.affix{
+	top: 10px;
+}
+.sidenav>.nav>ul{
+	padding-left: 10px;
+}
+.sidenav li{
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+.panel-title{
+	font-family: 'Open Sans Condensed';
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+::-webkit-scrollbar {
+	width: 7px !important;
+	height: 7px;
+}
+::-webkit-scrollbar-track {
+	background-color: rgba(113,112,107,0.08);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: rgba(0,0,0,.1);
+	-webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-color: rgba(0,0,0,.2);
+	-webkit-border-radius: 6px;
+}
+.page-header{
+
+/*	font-family: 'Open Sans Condensed';*/
+/*text-transform: uppercase;*/
+/*letter-spacing: 3px;*/
+
+}
+.site-title{
+	color: white;
+	letter-spacing: 3pt;
+	padding: 5px 0 5px 0;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed';
+	font-size: x-large;
+}
+.page-title{
+color: rgba(0, 0, 0, 0.51);
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
+margin-top: 0px;
+letter-spacing: 5px;
+text-transform: uppercase;
+}
+.project-title{
+	color: white;
+
+}
+.site-title::after{
+	content: ' | ';
+	color: rgba(255,191,0,1);
+}
+.heading-text{
+	letter-spacing: 3pt;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed';
+}
+.media-heading{
+	font-size: medium;
+	font-variant: small-caps;
+}
+img.bordered{
+	border: 1px solid #333;
+	display: inline;
+	width: 350px;
+	max-width: 90%;
+	float: left;
+	margin-right: 10px;
+}
+
+/* Phones */
+@media (max-width: 767px){
+	img.bordered{
+		display: block;
+		margin: 10px 5% 10px 5%;
+	}
+	.project-title{
+		display: block;
+		padding-top: 5px;
+	}
+}

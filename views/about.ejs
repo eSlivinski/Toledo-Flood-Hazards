@@ -1,0 +1,82 @@
+<html>
+	<% include partials/template/floodatlas_head.ejs %>
+	<body>
+		<% include partials/template/floodatlas_header.ejs %>
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-md-8 col-sm-8" role="main">
+					<p><img src="<%=theLoc%>img/toledo_flooding2.jpg" class='bordered'>As a consequence of decades of development in a topographically flat watershed, widespread and persistent flooding impacts the city of Toledo, Ohio every year. In the wake of the 2007-2009 recession, Toledo has also seen widespread declines in property values as well significant increases in the number of home foreclosures. City officials view these newly vacant lots as an opportunity to remedy both problems. Through the development of new green infrastructure, property values could be increased and the costs incurred from annual flooding could be reduced. In 2012, the city approached the National Oceanic and Atmospheric Administration with two questions: What are the costs and benefits of green infrastructure? And would the implementation of these structures make Toledo more resilient to climate change?</p>
+
+					<p>In 2012, the National Oceanic and Atmospheric Administration, the Association of State Floodplain Managers, the Eastern Research Group, and the United States Army Corps of Engineers partnered together to address the questions posed by city officials. With funding from the Great Lakes Restoration Initiative, the project partners embarked on a watershed-level economic analysis of the cost and benefits of green infrastructure as a method of reducing the negative effects of flooding. Over the course of the next two years, project partners worked with the community to select a study area, aggregate data, identify feasible green infrastructure alternatives, and discern how the study results could be used to encourage change in the future.</p>
+
+					<p><img src="<%=theLoc%>img/toledo_flooding1.jpg" class="bordered">In 2014, the project team published its final report. If green infrastructure was implemented to reduce the peak discharge in the Silver Creek watershed by 10 percent, project partners predicted that economic losses from flooding would decrease by more than 37 percent under current conditions. Under future land-use and climate conditions, project partners predicted that the economic losses from flooding would decrease by 41 percent. This study based its benefit cost analysis solely on the estimated physical damage to buildings and did not take into account damage to infrastructure, natural resources, business disruption, and other losses. As a result, the real benefits of green infrastructure are likely underrepresented by the results of this report.</p>
+
+					<p>The Toledo Flood Hazard Visualizer was developed to communicate the results of this study. With this tool, users are able to visualize the impacts of climate change and green infrastructure on the property level. By taking these data out of abstraction and placing them on the landscape level, users are effectively able to relate a change in infrastructure with a reduction in damage in their neighborhood. In addition to the various climate scenarios, users are also able to explore these effects are impacted by different magnitudes of flooding.~ <em>Bridget Faust, ASFPM</em></p>
+				</div>
+				<!-- /.col-md-8[role="main"] -->
+
+				<div class="col-md-4 col-sm-4">
+					<div class="affix-top sidenav mobile-<%=mobileDevice%>" role="complementary">
+						<div>
+							<ul class="nav">
+								<li role="presentation"><p class="panel-title"style="color: grey">Additional Resources</p></li>
+
+								<li>
+
+									<a href="http://coast.noaa.gov/digitalcoast/publications/climate-change-adaptation-pilot">
+										Economic Assessment of Green Infrastructure Strategies for Climate Change Adaptation: Pilot Studies in The Great Lakes Region
+									</a>
+								</li>
+								<li>
+									<a href="http://greatlakesresilience.org/stories/ohio/toledo%E2%80%99s-chronic-urban-flooding">
+										Toledo's Chronic Urban Flooding, Great Lakes Coastal Resilience Planning Guide
+									</a>
+								</li>
+								<li>
+									<a href="http://toledo.oh.gov/">
+										City of Toledo
+									</a>
+								</li>
+								<li>
+									<a href="http://greatlakesresilience.org/">
+										Great Lakes Coastal Resilience Planning Guide
+									</a>
+								</li>
+								<hr>
+								<li role="presentation"><p class="panel-title"style="color: grey">Contact</p></li>
+								<li>
+
+									<a href="mailto:jeff@floods.org"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Jeff Stone&mdash; <em><small>Association of State Floodplain Managers</small></em>
+
+									</a>
+								</li>
+								<li>
+									<a href="mailto:patekka.bannister@toledo.oh.gov">
+										<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Patekka Bannister&mdash; <em><small>City of Toledo</small></em>
+									</a>
+								</li>
+								<li>
+									<a href="mailto:lori.cary-kothera@noaa.gov">
+										<i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Lori Cary-Kothera&mdash; <em><small>NOAA Coastal Services Center</small></em>
+									</a>
+								</li>
+							</ul>
+							<!-- /.nav -->
+						</div>
+					</div>
+					<!-- /.affix-top[role="complementary"] -->
+				</div>
+				<!-- /.col-md-4 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+
+		<!-- scripts -->
+		<% include partials/template/floodatlas_footer.ejs %>
+		<% include partials/template/floodatlas_jsdefaults.ejs %>
+		<script src="<%=theLoc%>js/dataPortal.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,162 @@
+<!-- ABOUT MODAL -->
+<div id='aboutModal' class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" onclick="endTour()">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title">Toledo Flood Hazard Visualizer</h4>
+			</div>
+			<!-- /.modal-header -->
+
+			<div class="modal-body">
+				<p style="font-size:14px">Welcome to the Toldedo Flood Hazard Visualizer, the interactive tool the interactive mapping tool that allows you to explore the results of <a href="http://coast.noaa.gov/digitalcoast/publications/climate-change-adaptation-pilot"> Economic Assessment of Green Infrastructure Strategies for Climate Change Adaptation: Pilot Studies in The Great Lakes Region</a>.
+				<br><br>
+				Select <strong class="text-success">Learn More</strong> to read more about this study, or for instructions on how to use the application choose <strong class="text-info">Take the Tour</strong>.
+			</div>
+			<!-- /.modal-body -->
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-lg btn-success" onclick="location.href='<%=variables.aboutPath %>'">Learn More</button>
+				<button type="button" class="btn btn-lg btn-primary" onclick='helpTour()'data-dismiss="modal">Take the Tour</button>
+
+			</div>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- HISTOGRAM MODAL -->
+<div id='chartModal' class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+				<span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title"></h4>
+			</div>
+			<!-- /.modal-header -->
+			<div class="modal-body">
+
+
+				<div id="helpText">
+					<div id="pie-help" style="display:none">
+						This pie chart shows a breakdown of the parcels innundated by a <span class="floodevent-help"> x </span>yr flood, given <span class="scenario-help"> x </span>, grouped according to their associated flood damages (measured in <span class="attribute-help"> x </span>).
+						<br><br><em class="hidden-print">Hover over a section of the pie chart to reveal how many parcels would incur that level of damage</em>
+					</div>
+					<div id="histogram-help" style="display:none">
+						This histogram shows the number of properties that incur a certain level of damage (measured in <span class="attribute-help"> x </span>) from a <span class="floodevent-help"> x </span>yr flood, given <span class="scenario-help"> x </span> .
+						<br><br><em class="hidden-print">Hover over any of the bars in the histogram to reveal the number of parcels would incur that level of damage</em>
+					</div>
+					<div id="line-help" style="display:none">
+						This line chart shows the <span class="statistic-help"> x </span> occuring in the four climate/land use scenarios
+						<br><br><em class="hidden-print">Choose any of the following trends to modify the chart data</em>
+
+						<div class="hidden-print">
+								<select class="selectpicker" id="select-stats" data-hide-disabled="true">
+								    <option value="max">Maximum Flood Damages</option>
+								    <option value="mean">Mean Flood Damages</option>
+								    <option value="med">Median Flood Damages</option>
+								    <option value="sum">Total Flood Damages</option>
+								    <option value="n" selected>Total Innundated Parcels</option>
+
+								</select>
+
+						</div>
+					</div>
+
+				</div>
+				<hr>
+				<div style="height:400px;">
+					<div id="chartHolder"></div>
+				</div>
+			</div>
+			<!-- /.modal-body -->
+			<div class="modal-footer">
+				<button class="btn btn-default pull-left printer" data="#chartModal .modal-body">
+					<i class="fa fa-print"></i>
+				</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					Close
+				</button>
+				<button data='histogram' class="btn btn-default toolTip chartSelector" data-title="View Histogram">
+					<i class="fa fa-bar-chart-o"></i>
+				</button>
+				<button data='pie' class="btn btn-default toolTip chartSelector" data-title="View Pie Chart">
+					<i class="fa fa-pie-chart"></i>
+				</button>
+				<button data='line' class="btn btn-default toolTip chartSelector" data-title="View Line Graph">
+					<i class="fa fa-line-chart"></i>
+				</button>
+			</div>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<!-- SCALE EXPLANATION MODAL -->
+<div id='scaleExplanationModal' class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+				</button>
+				<h4 class="modal-title">Scales</h4>
+			</div>
+			<!-- /.modal-header -->
+			<div class="modal-body" style="max-height: 500px;overflow-y: scroll;">
+				<dl class="dl-horizontal">
+					<dt>Continuous</dt>
+					<dd>An unclassified method of data symbolization, wherein which every value in a dataset is assigned a unique symbol based on its placement in the distribution.</dd>
+				</dl>
+				<hr>
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="http://support.esri.com/en/knowledgebase/GISDictionary/term/equal-interval%20classification">Equal Interval</a>
+					</dt>
+					<dd>A data classification method that divides a set of attribute values into groups that contain an equal range of values</dd>
+				</dl>
+				<hr>
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="http://support.esri.com/en/knowledgebase/GISDictionary/term/Jenks%27%20optimization">Jenks Natural Breaks</a>
+					</dt>
+					<dd>A method of statistical data classification that partitions data into classes using an algorithm that calculates groupings of data values based on the data distribution. Jenks' optimization seeks to reduce variance within groups and maximize variance between groups.</dd>
+				</dl>
+				<hr>
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="http://support.esri.com/en/knowledgebase/GISDictionary/term/quantile%20classification">Quantile</a>
+					</dt>
+					<dd>A data classification method that distributes a set of values into groups that contain an equal number of values.</dd>
+				</dl>
+				<hr>
+				<dl class="dl-horizontal">
+					<dt>
+						<a href="http://support.esri.com/en/knowledgebase/GISDictionary/term/standard%20deviation%20classification">Standard Deviation</a>
+					</dt>
+					<dd>A data classification method that finds the mean value, then places class breaks above and below the mean at intervals of either .25, .5, or 1 standard deviation until all the data values are contained within the classes. Values that are beyond three standard deviations from the mean are aggregated into two classes, greater than three standard deviations above the mean and less than three standard deviations below the mean.</dd>
+				</dl>
+			</div>
+			<!-- /.modal-body -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

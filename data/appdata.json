@@ -1,0 +1,246 @@
+{
+   "floods":[
+      {
+         "value":1,
+         "floodEvent":2,
+         "annualChance":50,
+         "defaultValue": false
+      },
+      {
+         "value":2,
+         "floodEvent":5,
+         "annualChance":20,
+         "defaultValue": false
+      },
+      {
+         "value":3,
+         "floodEvent":10,
+         "annualChance":10,
+         "defaultValue": false
+      },
+      {
+         "value":4,
+         "floodEvent":25,
+         "annualChance":4,
+         "defaultValue": false
+      },
+      {
+         "value":5,
+         "floodEvent":50,
+         "annualChance":2,
+         "defaultValue": false
+      },
+      {
+         "value":6,
+         "floodEvent":100,
+         "annualChance":1,
+         "defaultValue": true
+      }
+   ],
+   "scenarios":[
+      {
+         "value":1,
+         "width":6,
+         "dg":9,
+         "compare":32,
+         "compare-landuse":32,
+         "compare-climate":17,
+         "compare-opposite":47,
+         "udf":2,
+         "text":"Current Precipitation and Land Use",
+         "defaultValue":true
+      },
+      {
+         "value":2,
+         "width":6,
+         "dg":24,
+         "compare":47,
+         "compare-landuse":47,
+         "compare-climate":2,
+         "compare-opposite":32,
+         "udf":17,
+         "text":"Future 2035 Precipitation and Land Use"
+      },
+      {
+         "value":3,
+         "width":6,
+         "dg":39,
+         "compare":3,
+         "compare-landuse":2,
+         "compare-climate":47,
+         "compare-opposite":17,
+         "udf":32,
+         "text":"Current Precipitation with Green Infrastructure"
+      },
+      {
+         "value":4,
+         "width":6,
+         "dg":54,
+         "compare":17,
+         "compare-landuse":17,
+         "compare-climate":32,
+         "compare-opposite":2,
+         "udf":47,
+         "text":"Future 2035 Precipitation with Green Infrastructure"
+      }
+   ],
+   "basemaps":[
+      {
+         "value":0,
+         "text":"Satellite",
+         "defaultValue":false
+      },
+      {
+         "value":1,
+         "text":"Street Map",
+         "defaultValue":true
+      },
+      {
+         "value":2,
+         "text":"Terrain"
+      }
+   ],
+   "scales":[
+      {
+         "value":"custom",
+         "text":"Custom",
+         "defaultValue":false
+      },
+      {
+         "value":"continuous",
+         "text":"Continuous",
+         "defaultValue":false
+      },
+      {
+         "value":"equalInterval",
+         "text":"Equal Interval",
+         "defaultValue":false
+      },
+      {
+         "value":"jenks",
+         "text":"Jenks Natural Breaks",
+         "defaultValue":true
+      },
+      {
+         "value":"quantile_Color",
+         "text":"Quantile",
+         "defaultValue":false
+      },
+      {
+         "value":"stdDev",
+         "text":"Standard Deviation",
+         "defaultValue":false
+      }
+   ],
+   "layers":[
+      {
+         "name":"floodLosses",
+         "longName":"Flood Losses",
+         "value":0
+      },
+      {
+         "name":"depthGrid",
+         "longName":"Depth Grid",
+         "value":1
+      },
+      {
+         "name":"stormDrains",
+         "longName":"Storm Water Network",
+         "value":2,
+         "sublayerID":"stormWaterSublayers",
+         "sublayerName":"stormWaterCheckboxes",
+         "sublayers":[
+
+            {
+               "longName":"Storm Water Mains",
+               "value":"mains",
+               "type": "checkbox"
+            },
+            {
+               "longName":"Storm Water Ditches",
+               "value":"ditches",
+               "type": "checkbox"
+            }
+         ]
+      },
+      {
+         "name":"landUse",
+         "longName":"Land Use",
+         "value":3,
+         "sublayerID":"landUseSublayers",
+         "sublayerName":"landUseRadios",
+         "sublayers":[
+
+            {
+               "longName":"Current Land Use",
+               "value":"CLU",
+               "type": "radio"
+            },
+            {
+               "longName":"Future Land Use",
+               "value":"FLU",
+               "type": "radio"
+            }
+         ]
+      },
+      {
+         "name":"watershed",
+         "longName":"Watershed Boundary",
+         "value":5
+      },
+      {
+         "name":"fema",
+         "longName":"FEMA National Flood Hazard Layer",
+         "value":6,
+         "sublayerID":"FEMASublayers",
+         "sublayerName":"FemaCheckboxes",
+         "sublayers":[
+            {
+               "longName":"Flood Hazard Zones",
+               "value":28,
+               "type": "checkbox"
+            },
+            {
+               "longName":"Flood Hazard Boundaries",
+               "value":27,
+               "type": "checkbox"
+            },
+            {
+               "longName":"High Water Marks",
+               "value":12,
+               "type": "checkbox"
+            },
+            {
+               "longName":"Water Lines",
+               "value":20,
+               "type": "checkbox"
+            }
+         ]
+      }
+   ],
+   "floodAttributes":[
+      {
+         "text":"Monetary Losses",
+         "value":"BldgLossUS"
+      },
+      {
+         "text":"Percent Damage",
+         "value":"BldgDmgPct",
+         "defaultValue":true
+      }
+   ],
+   "compareTypes":{
+      "landuse":{
+         "text":"Same Climate  &mdash; Different Land Use",
+         "value":"landuse"
+      },
+      "climate":{
+         "text":"Different Climate &mdash; Same Land Use",
+         "value":"climate"
+      },
+      "opposite":{
+         "text":"Different Climate &mdash; Different Land Use",
+         "value":"opposite"
+      }
+   }
+}

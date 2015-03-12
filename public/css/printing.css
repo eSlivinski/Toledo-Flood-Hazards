@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600);
+@media print {
+	@page {
+		size: 8.5in 11in;
+    	margin: .5in;
+    	padding: 0;
+
+	}
+
+	* {
+		font-family: 'Open Sans';
+	}
+
+
+	html {
+		padding: 0px!important;
+		width: 100%!important;
+	}
+
+	h2{
+		margin-top: 0px;
+		font-family: 'Open Sans'!important;
+	}
+	.printLegend{
+		padding: 10px;
+		border: 1px solid black;
+		page-break-before: always !important;
+
+	}
+	#printHolder{
+
+/*		width: 6.8in;
+		height: 5in;*/
+
+	}
+	#colorScaleContent{
+		display: none !important;
+	}
+	#printMap{
+		margin-left:0.1in;
+		border-width: 2px !important;
+		border-style: solid !important;
+		border-color: black !important;
+	}
+
+	.printSymbols{
+		 fill-opacity: 0.7;
+  		stroke-opacity: 1;
+  		stroke-width: 1;
+	}
+}

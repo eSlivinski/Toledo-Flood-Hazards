@@ -1,0 +1,30 @@
+
+	<div class="panel panel-default">
+		<div class="panel-heading"  role="tab" id = 'floodEventHeading'>
+			<a data-toggle="collapse" href="#floodEventBody" aria-expanded="false" aria-controls="collapseOne"data-parent="#accordion_Data">
+				<h4 class="panel-title">Flood Event <i class="fa fa-chevron-right pull-right"></i></h4>
+
+			<p class="panel-subtitle text-right">
+				<%-appdata.floods[((_DOM.floodEventRadios)-1)].floodEvent%> year flood&mdash;<%-appdata.floods[((_DOM.floodEventRadios)-1)].annualChance%>&#37; Annual Chance
+			</p>
+			</a>
+		</div>
+		<!-- /.panel-heading -->
+
+		<div id="floodEventBody" class="panel-collapse collapse" role="tabpanel" aria-labelledby="floodEventHeading">
+			<div id='floodGroup' class="list-group">
+				<% for(var i=0; i<appdata.floods.length; i++) {%>
+					<div class="radio list-group-item <% if (appdata.floods[i].value==_DOM.floodEventRadios){%> active<%}%>">
+						<label>
+							<span class="radio-icon"><i class='fa fa-check'style="margin-left: -15px"></i></span>
+							<input type="radio" class="invisible" name="floodEventRadios" value="<%=appdata.floods[i].value%>" year='<%=appdata.floods[i].floodEvent%>'<% if (appdata.floods[i].value==_DOM.floodEventRadios){%> checked<%}%> >
+							<%= appdata.floods[i].floodEvent %> year flood<small>&mdash;<%= appdata.floods[i].annualChance %>&#37; Annual Chance</small>
+						</label>
+					</div>
+				<% } %>
+			</div>
+		</div>
+		<!-- /#floodEventBody -->
+	</div>
+	<!-- /.panel -->
+<!-- </li> -->

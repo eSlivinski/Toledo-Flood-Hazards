@@ -1,0 +1,41 @@
+	<header>
+		<nav>
+			<div class="container">
+				<ul class="nav nav-pills pull-right">
+					<li>
+						<a href="./map" class="<% if (params.path=='/map'){%>current<%}%>">
+							Map
+						</a>
+					</li>
+					<li>
+						<a href="./about" class="<% if (params.path=='/about'){%>current<%}%>">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="./dataPortal" class="<% if (params.path=='/dataPortal'){%>current<%}%>">
+							Data
+						</a>
+					</li>
+				</ul>
+				<h4 class="pull-left nav-text">
+					<span class="site-title">Flood Atlas</span>
+					<span class='project-title'>
+						Toledo Flood Hazard Visualizer
+					</span>
+				</h4>
+			</div>
+			<!-- /.container -->
+		</nav>
+		<div class="container">
+			<div>
+				<h1>
+
+					<span class='page-title'>
+						<%= title %>
+					</span>
+				</h1>
+			</div>
+		</div>
+		<!-- /.container -->
+	</header>

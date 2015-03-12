@@ -1,0 +1,55 @@
+<div class="panel panel-default">
+	<div class="panel-heading" id = 'statsHeading'>
+		<a data-toggle="collapse" href="#statsBody" aria-expanded="true" aria-controls="collapseOne" >
+			<h4 class="panel-title expandPanel">Statistics</h4>
+		</a>
+	</div>
+	<!-- /.panel-heading -->
+	<div id="statsBody" class="panel-collapse collapse in custom-panel-body" role="tabpanel" aria-labelledby="statsHeading">
+		<div id="statistics">
+			<div class="block">
+				<span class="pull-left">Total Flood Damage: </span>
+				<span data="sum" class="pull-right stats-target"></span>
+			</div>
+			<div class="block">
+				<span class="pull-left">Mean Flood Damage: </span>
+				<span data="mean" class="pull-right stats-target"></span>
+			</div>
+			<div class="block">
+				<span class="pull-left">Median Flood Damage: </span>
+				<span data="median" class="pull-right stats-target"></span>
+			</div>
+			<div class="block">
+				<span class="pull-left">Innundated Parcels Total: </span>
+				<span data="n" class="pull-right stats-target"></span>
+			</div>
+		</div>
+	</div>
+	<!-- /#statsBody -->
+</div>
+<!-- /.panel -->
+
+<div class="panel panel-default">
+	<div class="panel-heading" id = 'chartsHeading'>
+		<a data-toggle="collapse" href="#chartsBody" aria-expanded="false" aria-controls="collapseOne" >
+			<h4 class="panel-title expandPanel">Charts</h4>
+		</a>
+	</div>
+	<!-- /.panel-heading -->
+	<div id="chartsBody" class="panel-collapse collapse custom-panel-body" role="tabpanel" aria-labelledby="chartsHeading">
+		<button data-toggle='modal' data-placement='left' data-target='#chartModal' data='histogram' class="btn btn-link btn-block chartSelector" data-title="View Histogram">
+			<i class="fa fa-bar-chart-o pull-right"></i>
+			<span class='pull-left'>Histogram</span>
+		</button>
+		<button data-toggle='modal' data-placement='left' data-target='#chartModal' data='pie' class="btn btn-link btn-block chartSelector" data-title="View Pie Chart">
+			<i class="fa fa-pie-chart pull-right"></i>
+			<span class='pull-left'>Pie Chart</span>
+		</button>
+		<button data-toggle='modal' data-placement='left' data-target='#chartModal' data='line' class="btn btn-link btn-block chartSelector" data-title="View Line Graph">
+			<i class="fa fa-line-chart pull-right"></i>
+			<span class='pull-left'>Line Chart</span>
+		</button>
+	</div>
+	<!-- /#statsBody -->
+</div>
+<!-- /.panel -->

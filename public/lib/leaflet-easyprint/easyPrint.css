@@ -1,0 +1,15 @@
+
+.leaflet-control-easyPrint a {
+  background:#fff url(print.png) no-repeat 5px;
+  background-size:16px 16px;
+  display: block;
+  }
+
+
+
+@media print {
+
+	html {padding: 0px!important;}
+	.leaflet-control-easyPrint-button{display: none!important;}
+	.leaflet-control-attribution{display: none!important;}
+}

@@ -1,0 +1,43 @@
+
+	<div class="panel panel-default">
+		<div class="panel-heading" id = 'layerHeading'>
+			<a data-toggle="collapse" href="#layerBody" aria-expanded="true" aria-controls="collapseOne">
+				<h4 class="panel-title expandPanel">
+					Layers
+				</h4>
+			</a>
+		</div>
+		<!-- /.panel-heading-->
+		<div id="layerBody" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="layerHeading">
+			<div class="panel-body" style="padding-top:5px; padding-bottom:5px">
+
+				<% for(var i=0; i<appdata.layers.length; i++) {%>
+					<div class="checkbox">
+						<label>
+							<input name="layerCheckboxes" type="checkbox" data-name="<%= appdata.layers[i].name %>" value="<%= appdata.layers[i].value %>"
+								<%if (_DOM.layerCheckboxes.indexOf(appdata.layers[i].value)>=0){%> checked<%}%>
+								 >
+								<%= appdata.layers[i].longName %>
+						</label>
+					</div>
+					<% if (appdata.layers[i].sublayers!==undefined ) {%>
+						<div id='<%=appdata.layers[i].sublayerID %>' class='subLayer'>
+							<% appdata.layers[i].sublayers.forEach(function(d) { %>
+								<div class="<%=d.type%>">
+									<label>
+										<input name="<%=appdata.layers[i].sublayerName%>" type="<%=d.type%>" value="<%= d.value %>" <% if (_DOM.sublayers.indexOf(d.value)>=0){%> checked<%}%> >
+										<%=d.longName%>
+									</label>
+								</div>
+							<% }) %>
+							<!-- /sublayer -->
+						</div>
+					<% } %>
+				<% } %>
+				<!-- /appdata.layers -->
+			</div>
+			<!-- /.panel-body -->
+		</div>
+		<!-- /#layerBody -->
+	</div>
+	<!-- /.panel -->

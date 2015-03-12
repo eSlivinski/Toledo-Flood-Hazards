@@ -1,0 +1,257 @@
+/* Axis  */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1;
+  shape-rendering: geometricPrecision;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+}
+.statistic-help{
+  text-transform: lowercase;
+}
+.modal-body .axis text,
+.modal-body text.axisLabel {
+  font-size: 14px!important;
+}
+/* Symbols */
+.symbols.colorful{
+
+  cursor: pointer;
+}
+.symbols.colorful.hover,
+.symbols.colorful.popOpen{
+  fill-opacity: 1;
+  stroke-width: 3;
+  stroke: black;
+}
+
+/* Bars */
+.bars.colorful{
+  stroke-width:0;
+  cursor: pointer;
+  shape-rendering: geometricPrecision;
+}
+.bars.colorful.hover,
+.bars.colorful.popOpen{
+  stroke-width:3;
+  stroke: black;
+}
+.draggable{
+  shape-rendering: crispEdges;
+  cursor: row-resize;
+  stroke-width: 1;
+  stroke: white;
+  stroke-opacity: .5;
+}
+.resetBreaks{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 3px;
+  padding-right: 30px;
+}
+
+
+
+/*Attribution*/
+.custom-attribution{
+  text-align: left !important;
+  text-decoration: none !important;
+  background: rgba(255,255,255,.75);
+  font-size: 11px;
+  position: absolute;
+  padding: 2px 5px;
+}
+
+/* Tour Popups */
+.tourPop{
+  /*font-size: smaller;*/
+  z-index: 9999 !important;
+  background-color: rgba(23, 18, 18, 0.82)!important;
+  border-radius: 0px !important;
+  color: white;
+}
+.tourPop .btn-link {
+  text-shadow: 1px 0 2px #1443BD;
+    /*color: rgb(147, 199, 244) !important;*/
+}
+.tourPop .circle-row{
+
+}
+.tourPop .popover-title{
+    font-family: 'Open Sans Condensed';
+}
+.popover.tourPop. .arrow:after{
+   display: none!important;
+}
+.popover.tourPop.bottom>.arrow:after{
+   border-bottom-color: rgba(23, 18, 18, 0.76)!important;
+}
+.popover.tourPop.left>.arrow:after{
+   border-left-color: rgba(23, 18, 18, 0.76)!important;
+}
+.popover.tourPop.top>.arrow:after{
+   border-top-color: rgba(23, 18, 18, 0.76)!important;
+}
+.popover.tourPop.right>.arrow:after{
+   border-right-color: rgba(23, 18, 18, 0.76)!important;
+}
+.helpHolder{
+  z-index: 9998!important;
+}
+
+/* Symbol Popups */
+.popover.symbolPop{
+  background-color: #fff!important;
+  color: black !important;
+}
+.popover.symbolPop.bottom>.arrow:after{
+   border-bottom-color: #fff!important;
+}
+.popover.symbolPop.left>.arrow:after{
+   border-left-color: #fff!important;
+}
+.popover.symbolPop.top>.arrow:after{
+   border-top-color: #fff!important;
+}
+.popover.symbolPop.right>.arrow:after{
+   border-right-color: #fff!important;
+}
+.small-link{
+  font-size: x-small;
+}
+/* Popups */
+.closePopup{
+  font-size: 12px !important;
+}
+#OBJECTID_link{
+  text-decoration: none !important;
+  color: black;
+  pointer-events:none;
+}
+.nowShowing{
+  font-weight: bold;
+  text-decoration: none !important;
+}
+.popupChart{
+  width: 250px;
+  height: 250px;
+  shape-rendering: geometricPrecision;
+}
+.tick text{
+  font-family: 'Open Sans Condensed';
+  font-size: 12px;
+}
+.axisLabel{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #000000;
+  font-size: 11px;
+  text-anchor: middle;
+  font-family: Open Sans Condensed;
+  text-rendering: optimizeLegibility;
+}
+.popupChart .key text{
+  fill: black;
+  font-size: 10px;
+  text-anchor: middle;
+}
+.lineChart .line {
+  fill: none;
+  /*stroke-width: 2.5px;*/
+  shape-rendering: geometricPrecision !important;
+}
+.lineChart .lineCircles{
+  shape-rendering: geometricPrecision !important#22527b;
+}
+
+
+
+/* Legend */
+#hazardLegend{
+  height: 150px;
+}
+#hazardLegend text{
+  font-size: 12px;
+}
+
+.legendDescText strong{
+  font-family: inherit;
+}
+.legendHeading{
+  font-size: 16px!important;
+  text-anchor: middle;
+  FONT-FAMILY: OPEN SANS CONDENSED;
+  TEXT-TRANSFORM: uppercase;
+  LETTER-SPACING: 3PX;
+}
+.legendSymbols{
+  fill-opacity: .8;
+  stroke-opacity: 1;
+  stroke-width: 1;
+}
+.legendSymbols:hover{
+  fill-opacity:1;
+}
+.sizeLegend text{
+  text-anchor: middle;
+  font-size: 14px !important;
+  FONT-FAMILY: OPEN SANS CONDENSED;
+
+}
+.colorLegend text.halo,
+.colorLegend text.stroke{
+  font-size: 14px;
+  FONT-FAMILY: OPEN SANS CONDENSED;
+}
+.colorLegend text.halo{
+  stroke-width: 3;
+  stroke: white;
+  stroke-opacity: .8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+ text.mainChartX, text.mainChartY{
+    font-size: 14px;
+    FONT-FAMILY: OPEN SANS CONDENSED;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+ }
+
+
+/* Chart Holder */
+/* Line Chart */
+#chartHolder .line {
+  fill: none;
+  stroke-width: 2.5px;
+  shape-rendering: geometricPrecision !important;
+}
+
+ /*Histogram */
+.bar text {
+  font-size: .7em;
+  fill: white;
+  opacity: 0;
+}
+.bar:hover text {
+  font-size: .7em;
+  fill: black;
+  opacity: 1
+}
+.bar rect {
+  shape-rendering: geometricPrecision;
+}
+/* Pie Chart */
+polyline{
+  stroke: black;
+  stroke-width: .75px;
+  fill: none;
+}
+.pieSlice{
+  stroke: black;
+}
+
+
+
