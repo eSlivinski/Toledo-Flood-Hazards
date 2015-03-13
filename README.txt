@@ -4,6 +4,7 @@ To install the Toledo Flood Hazard Visualizer on your local machine:
 2. Navigate to the Toledo Flood Hazards folder in the command line
 3. npm install
 4. npm start
+5. In your browser, navigate to [http://localhost:3000/](http://localhost:3000/)
 
 Developed by Lizzi Slivinski for Association of State Floodplain Managers, 2014 - 2015
 eSlivinski@gmail.com
