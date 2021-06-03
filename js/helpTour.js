@@ -82,17 +82,17 @@ var helpData={
 			$('#sidebar-wrapper').scrollTo("#layerBody")
 		}
 	},
-	"share":{
-		selector : "#shareBody",
-		popOptions: {
-			content : "Share the findings displayed on the Toledo Flood Hazard Visualizer with the world!<br>Print or Export your custom map view, or export the data and do your own analysis",
-			placement : (startingValues.mobileDevice==true) ? "top" : "left",
-			delay: { "show": 1000, "hide": 0 }
-		},
-		before : function(){
-			$('#sidebar-wrapper').scrollTo("#shareBody")
-		}
-	},
+	// "share":{
+	// 	selector : "#shareBody",
+	// 	popOptions: {
+	// 		content : "Share the findings displayed on the Toledo Flood Hazard Visualizer with the world!<br>Print or Export your custom map view, or export the data and do your own analysis",
+	// 		placement : (startingValues.mobileDevice==true) ? "top" : "left",
+	// 		delay: { "show": 1000, "hide": 0 }
+	// 	},
+	// 	before : function(){
+	// 		// $('#sidebar-wrapper').scrollTo("#shareBody")
+	// 	}
+	// },
 	"map":{
 		selector : "#map",
 		popOptions: {
@@ -302,12 +302,12 @@ var currentTour = null
 	interfaceElements= ["navbar", "toggle"]
 	mapElements= ["map","zoom","circle", "pop","legend"]
 	dataPanel=["scenario","floodevent","attribute"]
-	sideBar=["toggle","layer","basemap","stat", "chart", "bar", "scaleselector", "classbreak", "share"]
+sideBar=["toggle","layer","basemap","stat", "chart", "bar", "scaleselector", "classbreak"/*, "share"*/]
 
 
 var tours = {
 
-		advanced : ["navbar","map","zoom","circle", "pop","legend","scenario","floodevent","attribute","toggle","displayPanel", "layer","basemap", "analyzePanel", "stat","charts", "dataDistBtn", "chart", "bar", "classbreak", "share"]
+		advanced : ["navbar","map","zoom","circle", "pop","legend","scenario","floodevent","attribute","toggle","displayPanel", "layer","basemap", "analyzePanel", "stat","charts", "dataDistBtn", "chart", "bar", "classbreak"/*, "share"*/]
 	}
 
 

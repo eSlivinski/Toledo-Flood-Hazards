@@ -13,7 +13,7 @@
 }
 .modal-body .axis text,
 .modal-body text.axisLabel {
-  font-size: 14px!important;
+  font-size: 12px!important;
 }
 /* Symbols */
 .symbols.colorful{
@@ -80,7 +80,7 @@
 
 }
 .tourPop .popover-title{
-    font-family: 'Open Sans Condensed';
+    font-family: 'Open Sans';
 }
 .popover.tourPop. .arrow:after{
    display: none!important;
@@ -140,16 +140,16 @@
   shape-rendering: geometricPrecision;
 }
 .tick text{
-  font-family: 'Open Sans Condensed';
-  font-size: 12px;
+  /* font-family: 'Open Sans Condensed'; */
+  font-size: 10px;
 }
 .axisLabel{
   text-transform: uppercase;
   /* letter-spacing: 1.5px; */
   color: #000000;
-  font-size: 11px;
+  font-size: 10px;
   text-anchor: middle;
-  font-family: Open Sans Condensed;
+  /* font-family: Open Sans Condensed; */
   text-rendering: optimizeLegibility;
 }
 .popupChart .key text{
@@ -197,13 +197,13 @@
 .sizeLegend text{
   text-anchor: middle;
   font-size: 14px !important;
-  FONT-FAMILY: OPEN SANS CONDENSED;
+  /* FONT-FAMILY: OPEN SANS CONDENSED; */
 
 }
 .colorLegend text.halo,
 .colorLegend text.stroke{
-  font-size: 14px;
-  FONT-FAMILY: OPEN SANS CONDENSED;
+  font-size: 10px;
+  /* FONT-FAMILY: OPEN SANS CONDENSED; */
 }
 .colorLegend text.halo{
   stroke-width: 3;

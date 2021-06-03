@@ -353,7 +353,7 @@ function openPop(id){
 		}
 
 		$('#ID_'+id+'').popover(pOptions).popover('show')
-		$('.symbolPop').css("left", ""+(parseFloat($('.symbolPop').position().left) + parseFloat($('#ID_'+id+'').attr("r")))+"px" )
+		$('.symbolPop').css("left", ""+((parseFloat($('.symbolPop').position()&& parseFloat($('.symbolPop').position().left)||0) + parseFloat($('#ID_'+id+'').attr("r")))+"px" )
 		$('#'+currentAttribute+'_link').addClass('nowShowing')
 
 		setTimeout(function(){

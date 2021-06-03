@@ -97,7 +97,7 @@ header .nav>li>a.current{
 color: rgba(0, 0, 0, 0.51);
 /* text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7); */
 margin-top: 0px;
-letter-spacing: 5px;
+/* letter-spacing: 5px; */
 text-transform: uppercase;
 }
 .project-title{
@@ -109,9 +109,9 @@ text-transform: uppercase;
 	color: rgba(255,191,0,1);
 }
 .heading-text{
-	letter-spacing: 3pt;
+	/* letter-spacing: 3pt; */
 	text-transform: uppercase;
-	font-family: 'Open Sans Condensed';
+	/* font-family: 'Open Sans Condensed'; */
 }
 .media-heading{
 	font-size: medium;

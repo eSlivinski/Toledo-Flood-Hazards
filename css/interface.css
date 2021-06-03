@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
 * {
 	font-family: 'Open Sans', sans-serif;
@@ -144,7 +144,7 @@ a.focus{
 }
 .modal-backdrop.fade.in{
 	height: 100%!important;
-	z-index: 1065!important;
+	z-index: unset!important;
 }
 .modal-title{
 	text-transform: capitalize;
