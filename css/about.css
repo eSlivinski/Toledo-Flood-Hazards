@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 * {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -57,9 +57,9 @@ header .nav>li>a.current{
 	margin-bottom: 10px;
 }
 .panel-title{
-	font-family: 'Open Sans Condensed';
-letter-spacing: 3px;
-text-transform: uppercase;
+	/* font-family: 'Open Sans Condensed'; */
+	/* letter-spacing: 3px; */
+	text-transform: uppercase;
 }
 ::-webkit-scrollbar {
 	width: 7px !important;
@@ -87,15 +87,15 @@ text-transform: uppercase;
 }
 .site-title{
 	color: white;
-	letter-spacing: 3pt;
+	/* letter-spacing: 3pt; */
 	padding: 5px 0 5px 0;
 	text-transform: uppercase;
-	font-family: 'Open Sans Condensed';
+	/* font-family: 'Open Sans Condensed'; */
 	font-size: x-large;
 }
 .page-title{
 color: rgba(0, 0, 0, 0.51);
-text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7);
+/* text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7); */
 margin-top: 0px;
 letter-spacing: 5px;
 text-transform: uppercase;

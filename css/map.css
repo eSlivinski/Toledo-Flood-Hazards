@@ -73,7 +73,7 @@
   color: white;
 }
 .tourPop .btn-link {
-  text-shadow: 1px 0 2px #1443BD;
+  /* text-shadow: 1px 0 2px #1443BD; */
     /*color: rgb(147, 199, 244) !important;*/
 }
 .tourPop .circle-row{
@@ -145,7 +145,7 @@
 }
 .axisLabel{
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
   color: #000000;
   font-size: 11px;
   text-anchor: middle;
@@ -182,9 +182,9 @@
 .legendHeading{
   font-size: 16px!important;
   text-anchor: middle;
-  FONT-FAMILY: OPEN SANS CONDENSED;
+  /* FONT-FAMILY: OPEN SANS CONDENSED; */
   TEXT-TRANSFORM: uppercase;
-  LETTER-SPACING: 3PX;
+  /* LETTER-SPACING: 3PX; */
 }
 .legendSymbols{
   fill-opacity: .8;
@@ -215,9 +215,9 @@
 
  text.mainChartX, text.mainChartY{
     font-size: 14px;
-    FONT-FAMILY: OPEN SANS CONDENSED;
+    /* FONT-FAMILY: OPEN SANS CONDENSED; */
     text-transform: uppercase;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
  }
 
 

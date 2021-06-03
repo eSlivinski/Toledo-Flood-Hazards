@@ -106,7 +106,7 @@
   border-top: 1px solid #e5e5e5;
 
 }
-.tool-btn{
+/* .tool-btn{
 	font-size: 10px !important;
 	-webkit-appearance: none;
 	padding: 0px 15px 0px 5px;
@@ -120,7 +120,7 @@
 	text-shadow: 0 1px 0 #fff;
 	filter: alpha(opacity=20);
 	opacity: .2;
-}
+} */
 .collapse-ellipse{
 
 	margin-top: -5px;
@@ -202,12 +202,12 @@ a.btn-block{
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
 	text-transform: uppercase;
-	letter-spacing: 5px;
+	/* letter-spacing: 5px; */
 	font-size: 20px !important;
 	text-align: center;
-	font-family: 'Open Sans Condensed';
+	/* font-family: 'Open Sans Condensed'; */
 	background-color: #eeeeee !important;
-	text-shadow: 1px 1px 1px rgba(137, 137, 137, 0.82);
+	/* text-shadow: 1px 1px 1px rgba(137, 137, 137, 0.82); */
 }
 .panel-group.on-map .panel{
 	background-color: rgba(230, 230, 230, 0) !important;
@@ -275,13 +275,13 @@ a.btn-block{
 	font-size: small;
 	color: #333;
 	text-transform: uppercase;
-	font-family: 'Open Sans Condensed';
-	letter-spacing: 3px;
+	/* font-family: 'Open Sans Condensed'; */
+	/* letter-spacing: 3px; */
 	margin-bottom: 0px;
 	border-right-width: 20px;
 	margin-right: 20px;
 	line-height: 1;
-	text-shadow: 1px 1px 1px #ccc;
+	/* text-shadow: 1px 1px 1px #ccc; */
 }
 .stepElement{
 	width: 100%;
